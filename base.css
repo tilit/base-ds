@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+:root {
+  --guava: #ef4143;
+  --grape: #6c2c85;
+}
+
+/* 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto'); */
+body {
+  /* background-color: #ffe6a0; */
+}
+
+p, span {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 350;
+  margin: 10px 0px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: Montserrat;
+  margin: 0px;
+	line-height: 1.2;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+h5 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+button, a.btn {
+  display: block;
+  font-size: 20px;
+  font-family: Montserrat;
+  outline: none;
+  background-color: var(--guava);
+  color: white;
+  border: none;
+  /* padding: 15px 35px; */
+  padding: 0.8rem 1.5rem;
+  /* padding: 1rem 3rem; */
+  font-weight: bold;
+  line-height: 100%;
+  margin: 0px;
+  border: 0px;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  /* border-radius: 15px; */
+}
+
+button:hover, a.btn:hover,
+button:focus, a.btn:focus {
+  box-shadow: 2px 2px 5px 3px #ababab;
+  box-shadow: 1px 1px 4px 2px #cacaca;
+}
+button.var, a.btn.var {
+  background-color: var(--grape);
+}
+
+
+
+
+
+.alert {
+  border: 1px solid #cecece;
+  background-color: #cecece88;
+  color: #383d41;
+  width: 100%;
+  padding: 0.8rem 3rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  box-shadow: 1px 1px 4px 1px #cacaca;
+  margin: 15px 0px;
+}
+.alert.success {
+  background-color: #c3e6cb88;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+
+}
+.alert.danger{
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  background-color: #f5c6cb88;
+}
+.alert.warning{
+  border: 1px solid #fbd972;
+  color: #ff7800;
+  background-color: #fbd97288;
+}
+.alert.primary{
+  border: 1px solid #ef9898;
+  color: var(--guava);
+  background-color: #ef989888;
+}
+.alert.secondary{
+  border: 1px solid #d997f1;
+  color: var(--grape);
+  background-color: #d997f188;
+}
+
+
+.badge{
+  border: 1px solid #cecece;
+  padding: 0.8rem 0.8rem;
+  font-weight: 500;
+  color: #383d41;
+  width: fit-content;
+  border-radius: 1.2rem;
+  background-color: #cecece88;
+}
+.badge.primary{
+  border: 1px solid #ef9898;
+  color: var(--guava);
+  background-color: #ef989888;
+}
+.badge.secondary{
+  border: 1px solid #d997f1;
+  color: var(--grape);
+  background-color: #d997f188;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  font-family: Montserrat;
+  font-weight: 600;
+  color: var(--grape)
+}
+thead > tr:last-of-type {
+  border-bottom: 5px solid var(--grape);
+}
+thead th {
+  line-height: 2rem;
+  font-size: 19px;
+  padding: 0.8rem;
+}
+
+tbody {
+  font-family: Roboto;
+}
+
+tbody td {
+  border-bottom: 1px solid var(--grape);
+}
+tbody td {
+  line-height: 1.5rem;
+  padding: 0.8rem;
+}
+
+/* tr > th:first-of-type, tr > td:first-of-type {
+  text-align: left;
+
+} */
+th, td {
+  background-color: #ededed66;
+}
+
+.inline, a.btn.inline {
+  display: inline-block;
+}
+
+#container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+#columns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#columns div {
+  padding: 10px;
+  text-align: justify;
+}
