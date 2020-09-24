@@ -255,14 +255,25 @@ nav {
   position: absolute;
   bottom: 0px;
   left: 0px;
+  display: flex;
+  width: 100%;
 }
 
 nav ul{
   padding: 0px;
-  
+  display: flex;
+  flex-grow: 1
 }
 nav li{
   display: inline-block;
+  flex-grow: 1;
+  text-align: center;
+}
+nav li a {
+  text-decoration: none;
+}
+nav li a span{
+  font-size: 50vh;
 }
 
 .inline, a.btn.inline {
