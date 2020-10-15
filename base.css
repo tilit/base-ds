@@ -433,8 +433,8 @@ select {
   position: absolute;
   left: 0;
   top: 0;
-  width: 18px;
-  height: 18px;
+  height: 25px;
+  width: 25px;
   border: 1px solid black;
   border-radius: 100%;
   background: #fff;
@@ -464,7 +464,7 @@ select {
 }
 
 [type="checkbox"] {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 25px;
